@@ -1,0 +1,383 @@
+/* Put your style information here! */
+@font-face {
+    font-family: Roboto;
+    src: url(Fonts/Roboto/Roboto-Light.ttf);
+    font-weight: lighter;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: url(Fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: Montserrat;
+    src: url(Fonts/Montserrat/Montserrat-Regular.ttf);
+    font-weight: normal;
+  }
+
+/* Navbar */
+.topnav {
+    overflow: hidden;
+    margin: 8vh 5vw 5vh 5vw;
+    width: 85vw;
+}
+
+.home {
+    float : left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.otherlinks{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    align-content: space-between;
+    padding-top: 1vh;
+}
+
+.otherlinks a{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    padding-left: 5vh;
+}
+
+/* Body */
+
+h4{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    text-align: center;
+    padding: 10%;
+    padding-top: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.body{
+    width:100vw;
+    height: 60vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ececec;
+    
+  }
+
+.image:hover .overlay {
+    opacity: 1;
+  }
+
+
+.headerimg{
+    align-self: center;
+    width: 70%;
+} 
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    width:80vw;
+
+    justify-content: center;
+    flex-direction: row;
+}
+
+h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center;
+}
+
+.title h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 1vh;
+    text-align: center;
+    
+}
+
+.title div{
+    margin-top: 10%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.column {
+    flex: 30%;
+    max-width: 33%;
+    padding: 0 4px;
+    justify-content: flex-start;
+}
+
+.column img{
+    width: 100%;
+}
+
+.image{
+    width:90%;
+    height: 90%;
+    position: relative;
+}
+
+.gallery{
+    width: 90vw;
+}
+
+
+/* identical to box height */
+
+
+
+
+@media screen and (max-width: 800px) {
+    /* Navbar */
+    .topnav{
+        margin: 30px;
+    }
+    .home {
+        padding-left: 10px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .otherlinks a{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 5vh;
+    }
+
+    .column {
+        flex: 48%;
+        max-width: 48%;
+    }
+
+/*Content*/
+    .title h1{
+        font-size: 24px;
+    }
+    
+    .title h3{
+        font-size: 18px;
+    }
+
+    .textsect h4{
+        font-size: 20px;
+        line-height: 30px;
+    
+        color: #632CFF;
+    }
+
+    .responsebox{
+        max-width: 80%;
+    }
+
+    .textsect p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        /* or 136% */
+        
+        letter-spacing: 0.03vh;
+        line-height: 3vh;
+        
+        color: #4e4e4E;
+    }
+
+    .responsebox{
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .greytitle {
+        font-size: 18px;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    /* Navbar */
+    .topnav{
+        margin: 15px;
+    }
+    .home {
+        padding-left: 5vw;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .otherlinks a{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 30px;
+        padding-left: 5vw;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+/*Content*/
+    .title h1{
+        font-size: 20px;
+    }
+    
+    .title h3{
+        font-size: 14px;
+    }
+
+    .textsect h4{
+        font-size: 18px;
+        line-height: 25px;
+    
+        color: #632CFF;
+    }
+
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .responsebox{
+        max-width: 100%;
+    }
+
+    .textsect p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        /* or 136% */
+        
+        letter-spacing: 0.03vh;
+        line-height: 3vh;
+        
+        color: #4e4e4E;
+    }
+    .responsebox{
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    .imgbox img{
+        width: 100%;
+    }
+
+    .color{
+        font-size: 16px;
+    }
+
+    .greytitle {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    /* Navbar */
+    .home {
+        padding-left: 5vw;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+    }
+    .otherlinks{
+        padding-top: 1vh;
+    }
+    .otherlinks a{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 30px;
+        padding-left: 3vw;
+    }
+
+    .title h1{
+        font-size: 70px;
+    }
+    
+    .title h3{
+        font-size: 50px;
+    }
+
+    .textsect h4{
+        font-size: 50px;
+        line-height: 60px;
+    
+        color: #632CFF;
+    }
+
+    .textsect p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        /* or 136% */
+        
+        letter-spacing: 0.03vh;
+        line-height: 3vh;
+        
+        color: #4e4e4E;
+    }
+
+    .greytitle {
+        font-size: 40px;
+    }
+
+   
+
+    .color {
+        font-size: 35px;
+    }
+}
