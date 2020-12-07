@@ -70,6 +70,7 @@
 .about-box{
     max-width: 50%;
     max-height: 50%;
+    
 }
 
 .about-box h1{
@@ -80,6 +81,8 @@
 
 .about-box img{
     width: 40vw;
+    padding-left:20%;
+
 }
 
 /* Body */
@@ -315,7 +318,9 @@ h1{
     
     .about-box img{
         width: 80vw;
+        padding-left:10%;
     }
+
     .otherlinks a{
         font-family: Montserrat;
         font-style: normal;
